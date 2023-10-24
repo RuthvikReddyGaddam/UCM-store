@@ -12,7 +12,7 @@
 				require_once('view/header.php');
 			?>
 			<main>
-				<div class="form-container" style="height: 1000px;">
+				<div class="form-container" style="height: 1050px;">
 					<div class="mb-3">
 						<div class="d-flex justify-content-center">
 							<h2>Sign Up</h2>
@@ -36,7 +36,7 @@
 							</div>
 							<div class="mt-3">
 								<label for="exampleFormControlInput1" class="form-label">Contact Number</label>
-								<input type="number" class="form-control border-danger" id="exampleFormControlInput1" placeholder="Enter your contact number" required>
+								<input type="text" class="form-control border-danger" id="exampleFormControlInput1" placeholder="Enter your contact number" maxlength="10" required>
 							</div>
 							<div class="mt-3">
 								<label for="exampleFormControlInput1" class="form-label">Address</label>
@@ -49,6 +49,10 @@
 							<div class="mt-3">
 								<label for="exampleFormControlInput1" class="form-label">State</label>
 								<input type="text" class="form-control border-danger" id="exampleFormControlInput1" placeholder="Enter your state" required>
+							</div>
+							<div class="mt-3">
+								<label for="exampleFormControlInput1" class="form-label">Zip Code</label>
+								<input type="text" class="form-control border-danger" id="exampleFormControlInput1" placeholder="Enter zip code" maxlength="5" required>
 							</div>
 							<div class="d-flex flex-column align-items-center">
 								<div class="d-grid gap-2 col-6 mx-auto">
