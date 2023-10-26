@@ -17,46 +17,46 @@
 						<div class="d-flex justify-content-center">
 							<h2>Sign Up</h2>
 						</div>
-						<form action="">
+						<form action=".?action=register" method="post">
 							<div class="mt-5">
 								<label for="exampleFormControlInput1" class="form-label">Email address</label>
-								<input type="email" class="form-control border-danger" id="exampleFormControlInput1" placeholder="Enter your email" required>
+								<input type="email" name="email" class="form-control border-danger" id="exampleFormControlInput1" placeholder="Enter your email" required>
 							</div>
 							<div class="mt-3">
 								<label for="inputPassword5" class="form-label">Password</label>
-								<input type="password" id="inputPassword5" class="form-control border-danger" placeholder="Enter your password" aria-describedby="passwordHelpBlock" required>
+								<input type="password" name="password" id="inputPassword5" class="form-control border-danger" placeholder="Enter your password" aria-describedby="passwordHelpBlock" required>
 							</div>
 							<div class="mt-3">
 								<label for="exampleFormControlInput1" class="form-label">First Name</label>
-								<input type="text" class="form-control border-danger" id="exampleFormControlInput1" placeholder="Enter your first name" required>
+								<input type="text" name="firstName" class="form-control border-danger" id="exampleFormControlInput1" placeholder="Enter your first name" required>
 							</div>
 							<div class="mt-3">
 								<label for="exampleFormControlInput1" class="form-label">Last Name</label>
-								<input type="text" class="form-control border-danger" id="exampleFormControlInput1" placeholder="Enter your last name" required>
+								<input type="text" name="lastName" class="form-control border-danger" id="exampleFormControlInput1" placeholder="Enter your last name" required>
 							</div>
 							<div class="mt-3">
 								<label for="exampleFormControlInput1" class="form-label">Contact Number</label>
-								<input type="text" class="form-control border-danger" id="exampleFormControlInput1" placeholder="Enter your contact number" maxlength="10" required>
+								<input type="text" name="contactNo" class="form-control border-danger" id="exampleFormControlInput1" placeholder="Enter your contact number" maxlength="10" required>
 							</div>
 							<div class="mt-3">
 								<label for="exampleFormControlInput1" class="form-label">Address</label>
-								<input type="text" class="form-control border-danger" id="exampleFormControlInput1" placeholder="Enter your address ex. street name, apartment number" required>
+								<input type="text" name="address" class="form-control border-danger" id="exampleFormControlInput1" placeholder="Enter your address ex. street name, apartment number" required>
 							</div>
 							<div class="mt-3">
 								<label for="exampleFormControlInput1" class="form-label">City</label>
-								<input type="text" class="form-control border-danger" id="exampleFormControlInput1" placeholder="Enter your city" required>
+								<input type="text" name="city" class="form-control border-danger" id="exampleFormControlInput1" placeholder="Enter your city" required>
 							</div>
 							<div class="mt-3">
 								<label for="exampleFormControlInput1" class="form-label">State</label>
-								<input type="text" class="form-control border-danger" id="exampleFormControlInput1" placeholder="Enter your state" required>
+								<input type="text" name="state" class="form-control border-danger" id="exampleFormControlInput1" placeholder="Enter your state" required>
 							</div>
 							<div class="mt-3">
 								<label for="exampleFormControlInput1" class="form-label">Zip Code</label>
-								<input type="text" class="form-control border-danger" id="exampleFormControlInput1" placeholder="Enter zip code" maxlength="5" required>
+								<input type="text" name="zipCode" class="form-control border-danger" id="exampleFormControlInput1" placeholder="Enter zip code" maxlength="5" required>
 							</div>
 							<div class="d-flex flex-column align-items-center">
 								<div class="d-grid gap-2 col-6 mx-auto">
-									<button type="button" class="btn btn-danger mt-5">Register</button>
+									<button type="submit" class="btn btn-danger mt-5">Register</button>
 								</div>
 								<p class="mt-2">
 								<a href="index.php?action=login" class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover">

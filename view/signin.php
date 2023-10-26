@@ -17,22 +17,22 @@
 						<div class="d-flex justify-content-center">
 							<h2>Login</h2>
 						</div>
-						<form action="">
+						<form action="." method="post">
 							<div class="mt-5">
 								<label for="exampleFormControlInput1" class="form-label">Email address</label>
-								<input type="email" class="form-control border-danger" id="exampleFormControlInput1" placeholder="Enter your email" required>
+								<input type="email" name="email" class="form-control border-danger" id="exampleFormControlInput1" placeholder="Enter your email" required>
 							</div>
 							<div class="mt-3">
 								<label for="inputPassword5" class="form-label">Password</label>
-								<input type="password" id="inputPassword5" class="form-control border-danger" placeholder="Enter your password" aria-describedby="passwordHelpBlock" required>
+								<input type="password" name="password" id="inputPassword5" class="form-control border-danger" placeholder="Enter your password" aria-describedby="passwordHelpBlock" required>
 							</div>
 							<div class="d-flex mt-3">
-								<input type="checkbox" id="danger-outlined" class="mt-1" autocomplete="off">
+								<input type="checkbox" id="danger-outlined" name="isAdmin" value="true" class="mt-1" autocomplete="off">
 								<label for="danger-outlined" class="ms-2">I am an admin</label><br>
 							</div>
 							<div class="d-flex flex-column align-items-center">
 								<div class="d-grid gap-2 col-6 mx-auto">
-									<button type="button" class="btn btn-danger mt-5">Login</button>
+									<button type="submit" class="btn btn-danger mt-5">Login</button>
 								</div>
 								<p class="mt-2">
 								<a href="index.php?action=register" class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover">
