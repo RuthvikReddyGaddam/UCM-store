@@ -16,3 +16,15 @@
     background-size:contain;
     background-position: center;
 }
+
+.footer-container{
+    background: #dc3545;
+    color:#ffffff;
+    height: fit-content;
+}
+.footer--logo {
+    margin: 0.1rem 0.5rem;
+}
+.footer--img {
+    height: 1.2rem;
+}

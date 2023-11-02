@@ -26,9 +26,15 @@
 								<label for="inputPassword5" class="form-label">Password</label>
 								<input type="password" name="password" id="inputPassword5" class="form-control border-danger" placeholder="Enter your password" aria-describedby="passwordHelpBlock" required>
 							</div>
-							<div class="d-flex mt-3">
+							<!-- <div class="d-flex mt-3">
 								<input type="checkbox" id="danger-outlined" name="isAdmin" value="true" class="mt-1" autocomplete="off">
 								<label for="danger-outlined" class="ms-2">I am an admin</label><br>
+							</div> -->
+							<div class="form-check mt-3" >
+								<input class="form-check-input" type="checkbox" name="isAdmin" value="true" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">
+									I am an admin
+								</label>
 							</div>
 							<div class="d-flex flex-column align-items-center">
 								<div class="d-grid gap-2 col-6 mx-auto">
@@ -45,6 +51,9 @@
 				</div>
 			</main>
 		</div>
+		<?php 
+				require_once('view/footer.php');
+		?>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 	</body>
 

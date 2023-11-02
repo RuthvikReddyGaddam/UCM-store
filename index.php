@@ -5,12 +5,12 @@ require_once ('model/signup_model.php');
 $action = $_SERVER['QUERY_STRING'];
 if(!$action){
     $action = "login";
-		echo"actoiooooon".$action;
+			// echo"actoiooooon".$action;
 }else{
     parse_str($action, $output);
     $action = $output['action'];
 }
-// $action = "login";
+// $action = "all_products";
 
 
 switch($action) {
