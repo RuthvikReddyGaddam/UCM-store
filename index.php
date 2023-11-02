@@ -6,9 +6,9 @@ $action = $_SERVER['QUERY_STRING'];
 if(!$action){
     $action = "login";
 			// echo"actoiooooon".$action;
-}else{
-    parse_str($action, $output);
-    $action = $output['action'];
+		}else{
+			parse_str($action, $output);
+			$action = $output['action'];
 }
 // $action = "all_products";
 
@@ -52,6 +52,7 @@ switch($action) {
         include('view/allProducts.php');
         break;
     default:{
+			include('view/404.php');
         break;
     }
 }
