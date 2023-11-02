@@ -12,7 +12,7 @@
 				require_once('view/header.php');
 			?>
 			<main>
-				<div class="products_container mt-5 mb-5">
+				<div class="products_container mt-5 mb-3">
 					<div class="row row-cols-1 row-cols-md-6 g-4">
           <?php
             $allProducts = array("productName" => "Tumbler","description"=>"A viking brand 40oz handle tumbler with printed UCM logo 'Central Missouri'","price"=>"35" );
