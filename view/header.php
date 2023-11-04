@@ -13,7 +13,7 @@
 					<div class="d-flex justify-content-end align-items-center mt-3">
 						<a href="index.php?action=login" class="btn btn-danger me-2" tabindex="-1" role="button" aria-disabled="true">Login</a>
 						<button type="button" class="btn btn-danger me-2">Logout</button>
-						<button type="button" class="btn btn-danger">My Cart</button>
+						<a href="index.php?action=my_cart" class="btn btn-danger me-2" tabindex="-1" role="button" aria-disabled="true">My Cart</a>
 					</div>
 				</div>
 			</header>
