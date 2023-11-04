@@ -61,7 +61,10 @@ switch($action) {
 			}
         include('view/allProducts.php');
         break;
-    default:{
+    case "my_cart":
+				include('view/myCart.php');
+				break;
+		default:{
 			include('view/404.php');
         break;
     }
