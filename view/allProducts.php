@@ -15,9 +15,11 @@
 				<div class="products_container mt-5 mb-3">
 					<div class="row row-cols-1 row-cols-md-6 g-4">
           <?php
-            $allProducts = array("productName" => "Tumbler","description"=>"A viking brand 40oz handle tumbler with printed UCM logo 'Central Missouri'","price"=>"35" );
+            $allProducts = array("productName" => "Tumbler","description"=>"A viking brand 40oz handle tumbler with printed UCM logo 'Central Missouri'","price"=>"35","productId"=>"1321" );
             $i=0;
             while($i<12){
+              echo('<a class="link-offset-2 link-underline link-underline-opacity-0" href=index.php?action=all_products&&product_id=');
+              echo($allProducts['productId'].">");
               echo('<div class="col">');
               echo('<div class="card border border-danger border-2">');
               echo('<img src="images/tumbler.png" class="card-img-top" alt="...">');
@@ -25,12 +27,16 @@
               echo('<h5 class="card-title">');
               echo($allProducts['productName']);
               echo('</h5>');
+              // echo('<a href="#" class="btn btn-danger">');
+              // echo('View Details');
+              // echo('</a>');
               echo('<p class="card-text">');
               echo($allProducts['description']);
               echo('</p>');
               echo('</div>');
               echo('</div>');
               echo('</div>');
+              echo("</a>");
               $i++;
             }
           ?>
