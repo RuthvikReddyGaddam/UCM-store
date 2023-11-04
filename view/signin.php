@@ -36,14 +36,17 @@
 									I am an admin
 								</label>
 							</div>
+								<div class="mt-2" >
+									<p class="text-danger">Invalid Credentials. Please try again!!</p>
+								</div>
 							<div class="d-flex flex-column align-items-center">
 								<div class="d-grid gap-2 col-6 mx-auto">
-									<button type="submit" class="btn btn-danger mt-5">Login</button>
+									<button type="submit" class="btn btn-danger mt-4">Login</button>
 								</div>
 								<p class="mt-2">
-								<a href="index.php?action=register" class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover">
-									Not Registered ? Go to registration page
-								</a>	
+									<a href="index.php?action=register" class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover">
+										Not Registered ? Go to registration page
+									</a>	
 								</p>
 							</div>
 						</form>
