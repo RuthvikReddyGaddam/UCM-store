@@ -13,7 +13,7 @@
 			?>
 			<main>
         <div class="d-flex justify-content-center mt-5" >
-          <h2 class="text-danger">Cart Summary</h2>
+          <h2 class="text-danger">Order Summary</h2>
         </div>
         <div class="row">
           <div class="col-8">

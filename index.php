@@ -64,6 +64,12 @@ switch($action) {
     case "my_cart":
 				include('view/myCart.php');
 				break;
+		case "user_profile":
+			include('view/profile.php');
+			break;
+		case "user_orders":
+			include('view/myOrderHistory.php');
+			break;
 		default:{
 			include('view/404.php');
         break;
