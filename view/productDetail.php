@@ -33,7 +33,9 @@
             <div class="row mt-3"><h4>A viking brand 40oz handle tumbler with printed UCM logo 'Central Missouri'</h4></div>
             <div class="row mt-3"><h5>$10.00</h5></div> -->
             <div class="row">
-            <form action="?action=all_products&&product_id=" method="post" class="row g-3">
+            <?php 
+              echo '<form method="post" class="row g-3" action=index.php?action=all_products&&product_id='.$_GET['product_id'].">";
+            ?>
               <div class="col-auto">
                 <input type="number" class="form-control border-danger" id="product_quantity" placeholder="Enter Quantity"  min="1">
               </div>
