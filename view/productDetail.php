@@ -20,13 +20,13 @@
             <div class="row mt-5"><h2 class="text-danger">Product Description</h2></div>
             <?php 
               echo '<div class="row mt-5"><h2>';
-              echo $productDetail['productName'];
+              echo $product['ProdName'];
               echo '</h2></div>';
               echo '<div class="row mt-3"><h4>';
-              echo $productDetail['description'];
+              echo $product['Description'];
               echo '</h4></div>';
               echo '<div class="row mt-3"><h5>$ ';
-              echo $productDetail['price'];
+              echo $product['UnitPrice'];
               echo '</h5></div>';
             ?>
             <!-- <div class="row mt-5"><h2>Tumbler</h2></div>
@@ -34,10 +34,10 @@
             <div class="row mt-3"><h5>$10.00</h5></div> -->
             <div class="row">
             <?php 
-              echo '<form method="post" class="row g-3" action=index.php?action=all_products&&product_id='.$_GET['product_id'].">";
+              echo '<form method="post" class="row g-3" action="index.php?action=all_products&&product_id='.$_GET['product_id'].'"'.">";
             ?>
               <div class="col-auto">
-                <input type="number" class="form-control border-danger" id="product_quantity" placeholder="Enter Quantity"  min="1">
+                <input type="number" class="form-control border-danger" id="product_quantity" name="product_quantity" placeholder="Enter Quantity"  min="1">
               </div>
               <div class="col-auto">
                 <button type="submit" class="btn btn-danger mb-3">Add to Cart</button>

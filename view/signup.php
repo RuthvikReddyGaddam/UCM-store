@@ -1,3 +1,10 @@
+<?php 
+if(session_status() == PHP_SESSION_NONE){
+    $lifetime = 24*60*60;
+    session_set_cookie_params($lifetime);
+    session_start();
+}
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -17,6 +24,12 @@
 						<div class="d-flex justify-content-center">
 							<h2>Sign Up</h2>
 						</div>
+						<?php 
+							if(isset($_SESSION['error'])){
+								echo "<p style={color: red}>".$_SESSION["error"]."</p>";
+								unset($_SESSION['error']);
+							}
+						?>
 						<form action=".?action=register" method="post">
 							<div class="mt-5">
 								<label for="exampleFormControlInput1" class="form-label">Email address</label>

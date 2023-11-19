@@ -12,7 +12,8 @@
 				</a>	
 					<div class="d-flex justify-content-end align-items-center mt-3">
 						<a href="index.php?action=login" class="btn btn-danger me-2" tabindex="-1" role="button" aria-disabled="true">Login</a>
-						<button type="button" class="btn btn-danger me-2">Logout</button>
+						<a href="index.php?action=logout" class="btn btn-danger me-2" tabindex="-1" role="button" aria-disabled="true">Logout</a>
+						<!-- <button type="button" class="btn btn-danger me-2">Logout</button> -->
 						<a href="index.php?action=my_cart" class="btn btn-danger me-2" tabindex="-1" role="button" aria-disabled="true">My Cart</a>
 						<div class="btn-group" role="group">
 							<button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
