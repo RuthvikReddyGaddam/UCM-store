@@ -1,6 +1,6 @@
 <?php
 class Database {
-    private static $dsn = 'mysql:host=localhost:3306;dbname=ucmstore';
+    private static $dsn = 'mysql:host=localhost:3307;dbname=projectdb';
     private static $username = 'root';
     private static $password = '';
     private static $options = [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION];
