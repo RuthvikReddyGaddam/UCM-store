@@ -43,6 +43,8 @@ switch($action) {
             if($isPassMatched){
 								// create session and route to other page
 								$userDetails = getUserDetails($email);
+								// print_r($userDetails);
+								updateUsersCount($userDetails);
 								$_SESSION["loggedIn"] = true;
 								$_SESSION["userID"] = $userDetails['userID'];
 								$_SESSION["isAdmin"] = $userDetails['isAdmin'];
@@ -60,11 +62,8 @@ switch($action) {
 								break;
 						}
 				}
-				else{
-					include('view/signin.php');
-					break;
-				}
-				
+				include('view/signin.php');
+				break;
 
 
     case 'register':
@@ -111,11 +110,9 @@ switch($action) {
 					break;
 				}
 				// $productDetail = array("productName" => "Tumbler","description"=>"A viking brand 40oz handle tumbler with printed UCM logo 'Central Missouri'","price"=>"35.00","productId"=>"1321" );
-				else{
-					include('view/productDetail.php');
-					break;
-				}
 				
+				include('view/productDetail.php');
+				break;
 			}
 			$allProducts = getAllProducts();
 			include('view/allProducts.php');
@@ -274,7 +271,7 @@ switch($action) {
 				break;
 			}
 			if(isset($_POST['cardNumber']) && isset($_POST['cardHolder']) && isset($_POST['cvv']) && isset($_POST['valid_thru']) ){
-				$creditCardNumber = $_POST['cardNumber'];
+				$cardNumber = $_POST['cardNumber'];
 				$cvv = $_POST['cvv'];
 				if(strlen($creditCardNumber) != 16 && !is_numeric($creditCardNumber)){
 					$_SESSION['message'] = "Enter Valid 16 digit card Number !";
