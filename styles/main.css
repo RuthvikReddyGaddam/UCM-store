@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.form-container{
+    border: 2px solid black;
+    margin: 1rem auto;
+    border-radius: 15px;
+    padding: 20px;
+    width: 50%;
+    height: 500px;
+    background-image: url('../images/UCMMule.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position: center;
+}
+
+.footer-container{
+    background: #dc3545;
+    color:#ffffff;
+    height: fit-content;
+}
+.footer--logo {
+    margin: 0.1rem 0.5rem;
+}
+.footer--img {
+    height: 1.2rem;
+}
+
+.order-container{
+    border: 2px solid black;
+    margin: 1rem auto;
+    border-radius: 15px;
+    padding: 20px;
+    width: 50%;
+    height: 500px;
+}
+
